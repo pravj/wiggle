@@ -13,6 +13,9 @@ Wiggle is a responsive Jekyll theme best suitable to quickly shape that blog, yo
 ###Archive
 ![Wiggle](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle.png?raw=true "Wiggle")
 
+###Calculator First. Mobile Second.
+![Wiggle](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-tablet.png?raw=true "Wiggle Tablet")
+
 ###Post
 ![Wiggle-Post](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-post.png?raw=true "Wiggle Post")
 
