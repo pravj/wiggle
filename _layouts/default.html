@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+    <body>
+      <div class="row index-head">
+        <div class="col s12 m12 l12">
+          <blockquote>
+            <h4 class="index-title">
+              {{ site.Name }}
+            </h4>
+          </blockquote>
+        </div>
+      </div>
+
+      <div class="container index-content">
+        {{ content }}
+      </div>
+
+      {% include scripts.html %}
+
+    </body>
+  </html>

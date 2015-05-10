@@ -1,0 +1,60 @@
+---
+layout: default
+title: Archive
+synopsis: Technology, Life and Space
+---
+
+{% include navbar.html %}
+
+<ul class="collapsible" data-collapsible="accordion">
+
+  {% for post in paginator.posts %}
+
+    <li>
+      <div class="collapsible-header active truncate">
+        <i class="mdi-navigation-expand-more"></i><a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+      <div class="collapsible-body">
+        <blockquote class="post-description">
+          {{ post.description }}
+        </blockquote>
+      </div>
+    </li>
+
+  {% endfor %}
+
+</ul>
+
+<div class="pagination row">
+
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous col s6 m6 l6 waves-effect btn-flat left-align">
+      Previous
+    </a>
+  {% else %}
+    <span class="previous col s6 m6 l6 btn-flat disabled left-align">
+      Previous
+    </span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next col s6 m6 l6 waves-effect btn-flat right-align">
+      Next
+    </a>
+  {% else %}
+    <span class="next col s6 m6 l6 btn-flat disabled right-align">
+      Next
+    </span>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <div class="progress col s12 m12 l12" style="padding:0;">
+      <div class="determinate" style="width: calc(100% * (({{paginator.page}} * {{paginator.per_page}}) / ({{paginator.total_posts}})))"></div>
+    </div>
+  {% else %}
+    <div class="progress col s12 m12 l12" style="padding:0;">
+      <div class="determinate" style="width: 100%"></div>
+    </div>
+  {% endif %}
+
+</div>

@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Roboto-Thin';
+    src: url('../font/roboto/Roboto-Thin.ttf');
+}
+
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('../font/roboto/Roboto-Light.ttf');
+}
+
+body {
+  	background: #fcfcfc;
+}
+
+.home-button {
+	position: relative;
+	top: 1.2em;
+}
+
+h3 {
+	line-height: 3rem;
+}
+
+.post-head, .index-head {
+	background: #4e8098;																																																																																																																																										
+	padding: 2em 2em 2em 2em;																																																																					;
+}
+
+.post-title, .index-title {
+	color: #ffffff;
+	font-family: 'Roboto-Light';
+	font-weight: 200;
+}																																												
+
+.post-content {
+	font-size: 20px;
+	font-family: 'Roboto-Thin';
+	overflow: inherit;
+}
+
+.page-content {
+	font-size: 20px;
+	font-family: 'Roboto-Thin';
+}
+
+.collapsible-header a {
+	font-family: 'Roboto-Light';
+	font-weight: 'bolder';
+	font-size: 1.1rem;
+}
+
+.post-description {
+	font-size: 17px;
+	font-family: 'Roboto-Light';
+}
+
+.post-content a {
+	text-decoration: underline;
+}
+
+.post-date a {
+	text-decoration: none;
+}
+
+.index-content {
+	font-size: 20px;
+	font-family: 'Roboto-Thin';
+}
+
+.post-date {
+	position: absolute;
+	left: 2%;
+}
+
+blockquote {
+	border-left-color: #37474f;
+}
+
+a {
+	color: #37474f;
+}
+
+.index-content li a {
+	pointer-events: none;
+}
+
+.index-content li .active a {
+	font-weight: bold;
+	pointer-events: auto;
+}
+
+.index-content nav li a {
+	font-weight: bold;
+	pointer-events: auto;
+}
+
+.post-content ul li,.page-content ul li {
+	list-style-type: square;
+}
+
+.page-content nav ul li {
+	list-style-type: none;
+}
+
+.post-tags a {
+	text-transform: none;
+}
+
+nav {
+	background-color: #4e8098;
+}
+
+.tabs .indicator {
+	background-color: #4e8098;
+}
+
+.page-content a {
+	text-decoration: underline;
+}
+
+.page-content nav ul li a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+nav .brand-logo {
+	font-family: 'Roboto-Light';
+	font-weight: bolder;
+	font-size: 1rem;
+	padding-left: 1rem;
+	text-decoration: none;
+}
+
+.progress {
+	background-color: #4e8098;
+}
+
+.progress .determinate {
+	background-color: #37474f;
+}
+
+.timeline-year {
+	color: #37474f;
+}
+
+.tag-title {
+	font-family: 'Roboto-Light';
+}
+
+.tag-post li a, .timeline-post li a {
+	text-decoration: none;
+}

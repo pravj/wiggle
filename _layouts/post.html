@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}    
+
+  <body>
+
+  	<div class="row post-head">
+      <div class="col s12 m2 l1 home-button">
+        <a class="valign btn-floating btn-large waves-effect waves-light blue-grey darken-3" href="/">
+          <i class="mdi-action-home"></i>
+        </a> 
+      </div>
+
+      <div class="col s12 m10 l11">
+        <h3 class="post-title">
+          {{ page.title }}
+        </h3>
+        
+        <div class="col s12 m12 l12 post-tags">
+
+          {% for tag in page.tags %}
+            {% if tag == page.tags.last %}
+              <a href="/tags/#{{ tag }}" class="waves-effect waves-black btn-flat">
+                {{ tag }}
+              </a>
+
+            {% else %}
+              <a href="/tags/#{{ tag }}" class="waves-effect waves-black btn-flat">
+                {{ tag }}
+              </a>
+              &middot;
+            {% endif %}
+          {% endfor %}
+
+        </div>
+      </div>
+    </div>
+
+      <div class="container post-content">
+
+        <blockquote class="post-date">
+          <a class="waves-effect waves-black btn-flat" href="/timeline">{{ page.date | date_to_string }}</a>
+        </blockquote>
+
+        <br/>
+        <br/>
+
+        {{ content }}
+
+      </div>
+
+      {% include scripts.html %}
+
+    </body>
+
+  </html>

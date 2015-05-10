@@ -1,0 +1,26 @@
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/public/js/materialize.js"></script>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+  	$(".button-collapse").sideNav();
+    $(".collapsible li.active i").removeClass("mdi-navigation-expand-more").addClass("mdi-navigation-chevron-right");
+
+    var width = ($(window).width() * 0.7);
+    $("img").addClass("materialboxed").attr("width", width);
+    $('.materialboxed').materialbox();
+
+    $(".collapsible li").click(function(){
+      $(".collapsible li i").removeClass("mdi-navigation-chevron-right").addClass("mdi-navigation-expand-more");
+	  $(".collapsible li.active i").removeClass("mdi-navigation-expand-more").addClass("mdi-navigation-chevron-right");
+    });
+
+    $(window).resize(function(){
+      var width = ($(window).width() * 0.7);
+      $("img").attr("width", width);
+    });
+
+    var activeSection = "{{ page.title }}".toLowerCase();
+    $(".nav-wrapper li." + activeSection).addClass("active");
+  });
+</script>

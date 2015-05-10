@@ -1,0 +1,12 @@
+Name: Pravendra Singh
+
+paginate: 3
+paginate_path: "/archive/:num/"
+
+author:
+  name:		Pravendra Singh
+  url:		https://pravj.github.io
+  twitter:	https://twitter.com/hackpravj
+  github:	https://github.com/pravj
+
+version: 1.0.0
