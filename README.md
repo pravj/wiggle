@@ -13,11 +13,14 @@ Wiggle is a responsive Jekyll theme best suitable to quickly shape that blog, yo
 ###Archive
 ![Wiggle](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle.png?raw=true "Wiggle")
 
+###Post
+![Wiggle-Post](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-post.png?raw=true "Wiggle Post")
+
 ###About
-![Wiggle-about](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-about.png?raw=true "Wiggle About")
+![Wiggle-About](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-about.png?raw=true "Wiggle About")
 
 ###Tags
-![Wiggle-tags](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-tags.png?raw=true "Wiggle Tags")
+![Wiggle-Tags](https://github.com/pravj/gitpool/blob/master/wiggle/wiggle-tags.png?raw=true "Wiggle Tags")
 
 ###Author
 [Pravendra Singh](https://twitter.com/hackpravj)
